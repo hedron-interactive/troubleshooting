@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package com.test;
+
+message MyMessage {
+  int32 val1 = 1;
+  int32 val2 = 2;
+}
