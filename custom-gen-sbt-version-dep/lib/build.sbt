@@ -1,7 +1,7 @@
-import com.trueaccord.scalapb.compiler.Version.scalapbVersion
+import scalapb.compiler.Version.scalapbVersion
 
 libraryDependencies ++= Seq(
-  "com.trueaccord.scalapb" %% "scalapb-runtime" % scalapbVersion % "protobuf",
+  "com.thesamet.scalapb" %% "scalapb-runtime" % scalapbVersion % "protobuf",
   "com.typesafe.play" %% "play-json" % "2.6.7"
 )
 

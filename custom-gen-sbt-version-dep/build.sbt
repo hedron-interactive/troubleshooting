@@ -1,4 +1,4 @@
-import com.trueaccord.scalapb.compiler.Version.scalapbVersion
+import scalapb.compiler.Version.scalapbVersion
 
 lazy val lib = (project in file("lib"))
   .settings(
@@ -31,7 +31,7 @@ lazy val app = (project in file("app"))
     // for the dependencies this time since this is provided through the
     // dependency on protos project.
     libraryDependencies ++= Seq(
-      "com.trueaccord.scalapb" %% "scalapb-runtime" % scalapbVersion % "protobuf"
-    ),
+      "com.thesamet.scalapb" %% "scalapb-runtime" % scalapbVersion % "protobuf"
+    )
   )
   .dependsOn(lib)
